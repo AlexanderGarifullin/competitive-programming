@@ -1,2 +1,2 @@
 # competitive-programming
-Source codes of my solutions for any competitive programming problems
+My solutions and templates for solving and preparing competitive programming problem
