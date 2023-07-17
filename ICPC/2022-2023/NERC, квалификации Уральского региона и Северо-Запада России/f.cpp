@@ -3,7 +3,7 @@
 #define ld long double
 #define en '\n'
 using namespace std;
-
+ 
 int main()
 {
     ios_base::sync_with_stdio(false);
