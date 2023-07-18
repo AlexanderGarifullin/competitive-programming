@@ -15,7 +15,7 @@ vector<int> my_next_permutation(vector<int> v){
             return v;
         }
     }
-    // return smth
+    // return smth. Current permutation is the maximum.
     for (int i = 0; i < n; ++i) {
         v[i] = i + 1;
     }
