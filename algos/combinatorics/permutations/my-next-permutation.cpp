@@ -2,6 +2,7 @@
 // 1. Find the first element from the end in such a way that a[i] < a[i+1].
 // 2. From i + 1 to the end, find the minimum element that a[j] > a[i]. Swap a[i] and a[j].
 // 3. Reverse the elements from i + 1 to the end.
+
 vector<int> my_next_permutation(vector<int> v){
     int n = int(v.size());
     for (int i = n - 2; i >=0 ; --i) {
@@ -21,3 +22,12 @@ vector<int> my_next_permutation(vector<int> v){
     }
     return v;
 }
+
+/*
+    Proof 3 point
+    We need sort elements from i + 1 to n in ascending order. 
+    We can reverse instead of sorting because:
+    Let x < a1; a1 > a2 > a3 >a4; a3 - minimum that a3 > x;
+    Then if we swap x and a3: a3 < a1 > a2 > x > a4
+    Elements a1,a2,x,a4 already sorted descending and if we reverse them we'll get ascending order: a4 < x < a2 < a1 
+*/
