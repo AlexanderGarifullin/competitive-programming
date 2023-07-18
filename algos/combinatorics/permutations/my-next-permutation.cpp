@@ -1,4 +1,4 @@
-// O(n) 
+// O(n)  
 // 1. Find the first element from the end in such a way that a[i] < a[i+1].
 // 2. From i + 1 to the end, find the minimum element that a[j] > a[i]. Swap a[i] and a[j].
 // 3. Reverse the elements from i + 1 to the end.
