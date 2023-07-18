@@ -8,10 +8,8 @@ vector<int> my_next_permutation(vector<int> v){
     for (int i = n - 2; i >=0 ; --i) {
         if (v[i] < v[i+1]){
             int minmax = i + 1;
-            for (int j = i + 2; j < n; ++j) {
-                if (v[j] < v[minmax] && v[j] > v[i]) swap(j, minmax);
-            }
-            swap(v[i], v[minmax]);
+            while(minmax < n && v[minmax] > v[i]) ++minmax;
+            swap(v[i], v[minmax - 1]);
             reverse(v.begin()+i+1, v.end());
             return v;
         }
