@@ -1,3 +1,6 @@
+// cur solve O(n^2). in order to get O(n*log(n)) we need use smth like: pbds_tree, fenwick tree, segment tree
+
+
 // let's calculate the factorials of the numbers in advance
 void fill_factorials(vector<long long> &fac){
     fac[0] = 1;
@@ -51,3 +54,5 @@ i32 main() {
 
     return 0;
 }
+
+
