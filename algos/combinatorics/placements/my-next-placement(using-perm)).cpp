@@ -2,7 +2,7 @@
 // add to placement all elements from permutation 1..n that don't use in placement in descending order
 // generate next permutation
 // take first k elements
-bool next_placement(int n, vector<int> &place, vector<long long> fact){
+bool next_placement(int n, vector<int> &place){
     int k = int(place.size());
     vector<bool> used(n + 1);
     vector<int> permutation(n);
@@ -39,14 +39,13 @@ i32 main() {
        placement[i] = i + 1;
     }
 
-    vector<long long> factorials(n);
     bool next = true;
     do {
         for (int i = 0; i < placement.size(); ++i) {
             cout << placement[i];
             if (i != int(placement.size()) - 1) cout << ' ';
         }
-        next = next_placement(n, placement, factorials);
+        next = next_placement(n, placement);
         if (next) cout <<'\n';
     } while(next);
 
