@@ -4,7 +4,7 @@
 // #pragma GCC optimize("O3")
 // #pragma GCC optimize("unroll-loops")
 
-
+ 
 #define en '\n'
 #define f first
 //#define s second
