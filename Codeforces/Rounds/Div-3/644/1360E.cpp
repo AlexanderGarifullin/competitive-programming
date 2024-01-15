@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 #define ll long long
 #define ld long double
-#define en '\n'
-using namespace std;
+#define en '\n' 
 
 int main()
 {
