@@ -5,7 +5,7 @@
 // #pragma GCC optimize("unroll-loops")
 
 
-#define en '\n'
+#define en '\n' 
 //#define f first
 //#define s second
 //#define mp make_pair
