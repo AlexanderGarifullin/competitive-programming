@@ -149,19 +149,9 @@ str get(ll x) {
 }
 
 str div(str s, ll k) {
-    if (k == 1) return s;
     str r;
     int n = isz(s);
-    int len = 0;
-    int z = k;
-    while(z) {
-        len++; z/=10;
-    }
-    if (n < len) {
-        return "0";
-    }
     ll curNumber = 0;
-    int curLen = 0;
     for (int i = 0; i < n; ++i) {
         int c = s[i] - '0';
         curNumber = curNumber * 10 + c;
@@ -179,14 +169,14 @@ str div(str s, ll k) {
         }
         curNumber = newNumber;
     }
-
-    if (r.empty()) r = "0";
+    
     if (r[0] == '0'){
         reverse(all(r));
         while(!r.empty() && r.back() == '0') r.pop_back();
         if (r.empty()) r = "0";
         reverse(all(r));
     }
+    
     return r;
 }
 
